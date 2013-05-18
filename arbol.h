@@ -29,18 +29,18 @@ struct Informacion
 class Nodo
 {
 public:
-    int* llaves_;		// alloc
-    int  cuantas_llaves_;	// 0
-    bool es_hoja_;		// true
+    int* llaves_;           // alloc
+    int  cuantas_llaves_;   // 0
+    bool es_hoja_;          // true
 
-    Nodo* padre_;		// NULL
-    Nodo* siguiente_;		// NULL
-    Nodo* anterior_;		// NULL
+    Nodo* padre_;           // NULL
+    Nodo* siguiente_;       // NULL
+    Nodo* anterior_;        // NULL
 
     union
     {
-	Registro** datos_;	// alloc
-	Nodo**     hijos_;
+        Registro** datos_;  // alloc
+        Nodo**     hijos_;
     };
 
 public:
